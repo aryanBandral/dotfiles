@@ -1,0 +1,141 @@
+{
+  "$schema": "/etc/xdg/swaync/configSchema.json",
+  "ignore-gtk-theme": true,
+  "positionX": "center",
+  "positionY": "top",
+  "layer": "overlay",
+  "control-center-layer": "top",
+  "layer-shell": true,
+  "layer-shell-cover-screen": true,
+  "cssPriority": "application",
+  "control-center-margin-top": 0,
+  "control-center-margin-bottom": 0,
+  "control-center-margin-right": 0,
+  "control-center-margin-left": 0,
+  "notification-2fa-action": true,
+  "notification-inline-replies": false,
+  "notification-body-image-height": 100,
+  "notification-body-image-width": 200,
+  "timeout": 2,
+  "timeout-low": 2,
+  "timeout-critical": 0,
+  "fit-to-screen": false,
+  "relative-timestamps": true,
+  "control-center-width": 500,
+  "control-center-height": 1000,
+  "notification-window-width": 500,
+  "keyboard-shortcuts": true,
+  "notification-grouping": true,
+  "image-visibility": "when-available",
+  "transition-time": 200,
+  "hide-on-clear": false,
+  "hide-on-action": true,
+  "script-fail-notify": true,
+
+  "notification-visibility": {
+    "example-name": {
+      "state": "muted",
+      "urgency": "Low",
+      "app-name": "Spotify"
+    }
+  },
+  "widgets": [
+    "title",
+    "dnd",
+    "notifications",
+    "volume",
+    "backlight",
+    "mpris"
+  ],
+  "widget-config": {
+
+    "title": {
+      "text": "Notifications",
+      "clear-all-button": true,
+      "button-text": "󰎟 Clear"
+    },
+    "dnd": {
+      "text": "Do Not Disturb"
+    },
+    "label": {
+      "max-lines": 5,
+      "text": "Label Text"
+    },
+    "mpris": {
+      "show-album-art": "always",
+      "loop-carousel": true
+    },
+    "volume": {
+      "label": ""
+    },
+    "backlight":{
+      "label": "󰃠",
+      "device": "amdgpu_bl2"
+    },
+    "inhibitors": {
+      "text": "Inhibitors",
+      "button-text": "Clear All",
+      "clear-all-button": true
+    },
+
+
+    "menubar#label": {
+      "menu#power-buttons": {
+        "label": "", 
+        "position": "right",
+        "actions": [ 
+          {
+            "label": " Reboot",
+            "command": "systemctl reboot"
+          },
+          {
+            "label": " Lock",
+            "command": "hyprlock"
+          },
+          {
+            "label": " Logout",
+            "command": "exit"
+          },
+          {
+            "label": " Shut down",
+            "command": "shutdown now"
+          }
+        ]
+      },
+      "menu#powermode-buttons": {
+        "label": "󱐋", 
+        "position": "left",
+        "actions": [ 
+          {
+            "label": "",
+            "command": "powerprofilesctl set balanced"
+          },
+          {
+            "label": "󰌪",
+            "command": "powerprofilesctl set power-saver"
+          }
+        ]
+      }
+    },
+
+
+
+    "buttons-grid": {
+      "buttons-per-row": 7,
+      "actions": [
+        {
+          "label": "",
+          "type": "toggle",
+          "active": true,
+          "command": "sh -c '[[ $SWAYNC_TOGGLE_STATE == true ]] && nmcli radio wifi on || nmcli radio wifi off'",
+          "update-command": "sh -c '[[ $(nmcli radio wifi) == \"enabled\" ]] && echo true || echo false'"
+        },
+        {
+          "label": "",
+          "active": false,
+          "command": "blueman-manager"
+        }
+      ]
+    }
+  }
+}

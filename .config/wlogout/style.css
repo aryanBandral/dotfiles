@@ -1,0 +1,79 @@
+* {
+    background-image: none;
+    transition: 20ms;
+    box-shadow: none;
+}
+
+window {
+    background-color: rgba(0, 0, 0, 0.863);
+}
+
+button {
+    color: #FFFFFF;
+    background-color: transparent;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 20%;
+    border: none;
+	  border-radius: 10px;
+	  outline-style: none;
+}
+
+/* options */ 
+#lock {
+    background-color: rgba(30, 30, 46, 0.50);
+    background-image: image(url("icons/lock.svg"));
+    border-radius: 10px;
+    margin : 100px 10px 10px 550px;
+}
+
+#reboot {
+    background-color: rgba(30, 30, 46, 0.50);
+	  background-image: image(url("icons/reboot.svg"));
+	  border-radius: 10px;
+    margin : 10px 10px 100px 550px;
+}
+
+#logout {
+    background-color: rgba(30, 30, 46, 0.50);
+	  background-image: image(url("icons/logout.svg"));
+	  border-radius: 10px;
+    margin : 100px 550px 10px 10px;
+}
+
+#shutdown {
+    background-color: rgba(30, 30, 46, 0.50);
+	  background-image: image(url("icons/shutdown.svg"));
+	  border-radius: 10px;
+    margin : 10px 550px 100px 10px;
+}
+
+/* options on hover */ 
+button:hover {
+    background-size: 25%;
+	background-color: red;
+}
+
+button:hover#lock {
+    border-radius: 10px 10px 10px 10px;
+    margin : 80px 0px 0px 530px;
+	background-color: #313244;
+}
+
+button:hover#reboot {
+    border-radius: 10px 10px 10px 10px;
+    margin : 0px 0px 80px 530px;
+	background-color: #313244;
+}
+
+button:hover#logout {
+    border-radius: 10px 10px 10px 10px;
+    margin : 80px 530px 0px 0px;
+	background-color: #313244;
+}
+
+button:hover#shutdown {
+    border-radius: 10px 10px 10px 10px;
+    margin: 0px 530px 80px 0px;
+	background-color: #313244;
+}

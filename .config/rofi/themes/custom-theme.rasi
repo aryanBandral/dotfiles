@@ -1,0 +1,83 @@
+*{
+  font:   "JetBrains Mono Nerd Font 12";
+  background-color: transparent;
+  text-color: white;
+
+  margin:     0px;
+  padding:    0px;
+  spacing:    0px;
+}
+
+window {
+  location: center;
+  width: 480;
+  margin: 0 0 500 0;
+
+  border-radius:  28px;
+
+  background-color:rgba(30, 30, 46, 0.9);
+}
+
+mainbox {
+  padding:    12px;
+}
+
+inputbar {
+  background-color:  transparent;
+  text-color: #cdd6f4;
+
+  border-radius:  16px;
+
+  padding:    8px 16px;
+  spacing:    8px;
+  children: [ icon-search, entry ];
+}
+
+icon-search {
+  expand:     false;
+  filename:   "search";
+  size: 15px;
+}
+
+entry {
+  placeholder: "Apps";
+  placeholder-color:  gray;
+  text-color: #cdd6f4;  
+}
+
+textbox {
+  padding:    8px 24px;
+}
+
+listview {
+  background-color:   transparent;
+  border-radius: 16px;
+
+  margin:     12px 0 0;
+  lines:      4;
+  columns:    1;
+
+  fixed-height: false;
+  require-input: true;
+}
+
+element {
+  orientation: horizontal;
+  children: [element-icon  , element-text];
+  padding:        8px 16px;
+  spacing:        15px;
+  border-radius:  16px;
+}
+
+element-text {
+    vertical-align: 0.5;
+    text-color: #cdd6f4;
+}
+
+element selected normal, element selected active {
+    background-color:rgba(103, 168, 179, 0.6);
+}
+
+element-text selected{
+    text-color: #1e1e2e;
+}
