@@ -2,7 +2,7 @@
 
 Dotfiles for a custom Hyprland + Arch linux theme.
 
-the Theme uses catppuccin-Mocha-sky colors as a base.
+the Theme uses [catppuccin-Mocha](https://github.com/catppuccin/catppuccin) colors as a base.
 
 ## IMAGES:
 
