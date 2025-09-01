@@ -1,3 +1,5 @@
+# **HyprDots**
+
 Dotfiles for a custom Hyprland + Arch linux theme.
 
 the Theme uses catppuccin-Mocha-sky colors as a base.
@@ -19,8 +21,5 @@ the Theme uses catppuccin-Mocha-sky colors as a base.
 ## SDDM:
 <img width="1919" height="1080" alt="image" src="https://github.com/user-attachments/assets/6a83bbd7-bb3b-489a-94b6-3753e8517ce5" />
 
-check the install.sh script to see all the necessary packages needed to run the system properly. (Do not rely completely on the script as some packages or settings might need manual tweaking to get everything working properly.)
 
-
-
-*NOTE - create a /Pictures/Screenshots directory in the home directory for screenshot functionality to work properly*
+> *NOTE - create a `/Pictures/Screenshots` directory in the `home` directory for screenshot functionality to work properly*
