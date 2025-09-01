@@ -4,6 +4,18 @@ Dotfiles for a custom Hyprland + Arch linux theme.
 
 the Theme uses [catppuccin-Mocha](https://github.com/catppuccin/catppuccin) colors as a base.
 
+## **PACKAGES**
+
+- Terminal : [Kitty](https://sw.kovidgoyal.net/kitty/)
+- File Manager: [Thunar](https://wiki.archlinux.org/title/Thunar)
+- Bar: [waybar](https://github.com/Alexays/Waybar)
+- Lock-Screen: [Hyprlock](https://wiki.hypr.land/Hypr-Ecosystem/hyprlock/)
+- Display-manager: [SDDM](https://github.com/sddm/sddm)
+- Application Launcher: [Rofi-Wayland](https://github.com/in0ni/rofi-wayland)
+- Notifications-Daemon: [SwayNC](https://github.com/ErikReider/SwayNotificationCenter)
+- Theme: [Catppuccin-Mocha-Sky](https://catppuccin.com/palette/)
+- Cursor: [Catppucin-Mocha-Dark](https://github.com/catppuccin/cursors)
+
 ## IMAGES:
 
 ### DESKTOP:
